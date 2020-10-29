@@ -16,8 +16,11 @@
   align-items: center;
   position: relative;
   background: var(--header-bg);
-  padding: 30px 20px;
+  padding: 30px 20px 30px calc(50% - 70px);
+  font-family: var(--font-family-mono);
+  color: var(--primary-color);
 }
+
 .site-navigation {
   ul {
     list-style: none;
@@ -29,21 +32,19 @@
     margin-left: 20px;
   }
   a {
-    color: rgba(255,255,255,0.6);
+    color: #fff;
     text-decoration: none;
     &:hover {
-      color: rgba(255,255,255,0.8);
+      color: var(--gray);
     }
-  }
-  a[aria-current="page"] {
-    color: rgba(255,255,255,1)
+  
   }
   .menu-trigger {
     display: none;
     font-size: 24px;
     background: none;
     border: none;
-    color: white;
+    color: var(--gray);
     padding: 0;
     cursor: pointer;
   }
@@ -73,7 +74,7 @@
       right: 0;
       top: 100%;
       z-index: 1;
-      background: #421E2F;
+      background: var(--dark-color);
       width: 100%;
 			max-width: 320px;    
 			border-radius: 0 0 0 12px;
@@ -88,7 +89,7 @@
       padding: 20px;
     }
     a:hover {
-      background-color: #29121D;
+      background-color: var(--dark-color);
     }
   }
 }
@@ -100,7 +101,7 @@
 .site-logo {
   font-weight: bold;
   a {
-    color: #fff;
+    color: var(--gray);
 		text-decoration: none;
 		&:hover {
 			color: #fff;
@@ -126,18 +127,22 @@
 		color: rgba(0,0,0,0.7)
 	}
 	.description {
-		font-size: 20px;
-		line-height: 1.4;
-		margin-bottom: 30px;
+    margin: 16px;
+    p {
+      font-size: 16px;
+      font-family: var(--font-family-sans-serif-two);
+      color: var(--gray);
+    }
 	}
 	.featured-image {
-		border-radius: 12px;
+		border-radius: 0px;
+    max-width: 200px;
+    max-height: 300px;
+    margin: 0 auto;
 	}
 	@media (max-width: $breakpoint-md) {
-		padding-top: 30px;
-		> div:nth-child(1) {
-			padding-bottom: 30px;
-		}
+		padding-top: 32px;
+    padding-bottom: 0;
 	}
 }
 .home-posts {
@@ -145,6 +150,9 @@
 		padding-bottom: 30px;
 	}
 	padding-bottom: 100px;
+  .latest {
+    font-family: var(--font-family-mono);
+  }
 }
 .post-card {
 	padding: 16px;
@@ -344,16 +352,15 @@ article img {
 .site-footer {
 	display: flex;
 	align-items: center;
-  background: #eee;
+  background: var(--header-bg);
 	text-align: center;
-	font-size: 14px;
-	padding: 20px 0;
+	font-size: 20px;
+  padding-top: 24px;
 	p {
 		margin: 0;
-		color: #777
-	}
-	a {
-		font-weight: normal;
+		color: var(--gray);
+    font-weight: bold;
+    font-family: var(--font-family-mono)
 	}
 }
 
@@ -378,6 +385,7 @@ article img {
 			color: var(--header-bg);
 			pointer-events: none;
 		}
+    text-align: center;
 	}
 	&.-post {
 		text-align: inherit;

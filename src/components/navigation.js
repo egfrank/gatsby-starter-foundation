@@ -4,21 +4,18 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
 const MenuItems = [
   {
-    path: "/",
-    title: "Home"
-  },
-  {
-    path: "/about",
-    title: "About"
-  },
-  {
     path: "/blog",
     title: "Blog"
   },
   {
-    path: "/contact",
-    title: "Contact"
+    path: "/clips",
+    title: "Clips"
   },
+  {
+    path: "/",
+    title: "About"
+  },
+
 ]
 
 const ListLink = (props) => (<li><Link to={props.to}>{props.children}</Link></li>)

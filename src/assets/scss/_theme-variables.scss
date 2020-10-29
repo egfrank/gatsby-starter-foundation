@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Courier+Prime:wght@400;700&family=Lato:wght@400;700&family=Nunito:wght@200;400&display=swap');
+
 // breakpoints
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
@@ -5,22 +7,29 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
 :root {
-
-	--font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-	--font-family-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  --font-family-serif: 'Cormorant Garamond', serif;
+  --font-family-sans-serif-one: 'Lato', sans-serif;
+  --font-family-sans-serif-two: 'Nunito', sans-serif;
+	--font-family-mono:'Courier Prime', monospace;
   --font-size-small: 12px;
-  
-  --primary-color: #5C2941;
-  --header-bg: #5C2941;
 
-  --home-link-color: #A1613F;
+
+  --primary-color: rgba(5, 0, 255, 1);
+  --gray: #2C2C2C;
+  --white: #FFF;
+  --dark-color: rgba(5, 0, 255, 0.65);
+
+  --gradient-one: linear-gradient(26.87deg, rgba(5, 0, 255, 0.65) 1.9%, rgba(105, 142, 238, 0.2) 34.55%, rgba(105, 142, 238, 0.2) 34.56%, #FFEBCC 96.91%);;
+
+  --header-bg: var(--gradient-one);
+
+  --home-link-color: rgba(5, 0, 255, 1);
   --home-link-hover-color:  var(--primary-color);
 
-  --button-color: #E5C3D3;
-  --button-alternate-color: #5C2941;
+  --button-color: #fff;
+  --button-alternate-color: rgba(5, 0, 255, 0.65);
 
   --post-link-color: #0F070B;
-
 
   --nav-link-hover-bg: #111;
   --text-color-meta: rgba(0,0,0,0.5);
