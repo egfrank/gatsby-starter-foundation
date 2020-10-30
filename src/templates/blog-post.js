@@ -52,17 +52,23 @@ const Post = ({ data, pageContext }) => {
         <header className="featured-banner">
           <section className="article-header">
             <h1>{frontmatter.title}</h1>
+            <p>{frontmatter.subhead}</p>
             <time>{frontmatter.date}</time>
           </section>
-          {Image ? (
-            <Img 
-              fluid={Image} 
-              objectFit="cover"
-              objectPosition="50% 50%"
-              alt={frontmatter.title + ' - Featured image'}
-              className="featured-image"
-            />
-          ) : ""}
+          <div class="image-container">
+            {Image ? (
+              <Img 
+                fluid={Image} 
+                objectFit="cover"
+                objectPosition="50% 50%"
+                alt={frontmatter.title + ' - Featured image'}
+                className="featured-image"
+              />
+            ) : ""}
+            {frontmatter.caption ? (
+              <figcaption>{frontmatter.caption}</figcaption>
+            ) : ""}
+          </div>
         </header>
         
         <div
@@ -92,9 +98,11 @@ export const pageQuery = graphql`
         slug
         title
         description
+        subhead
+        caption
         featuredImage {
           childImageSharp {
-            fluid(maxWidth: 1980, maxHeight: 768, quality: 80, srcSetBreakpoints: [350, 700, 1050, 1400]) {
+            fluid(maxWidth: 2400, maxHeight: 2000, quality: 80, srcSetBreakpoints: [350, 700, 1050, 1400]) {
               ...GatsbyImageSharpFluid
               ...GatsbyImageSharpFluidLimitPresentationSize
             }

@@ -4,7 +4,9 @@ title: Struck From the Record
 slug: /bobby-seale
 date: 2020-10-28 13:34
 description: Struck From the Record
+subhead: The Trial of the Chicago 7 fictionalizes the stories of all of its participants. In the case of Bobby Seale, the omissions tell their own story.
 featuredImage: /assets/bound-and-gagged.jpg
+caption: Howard Brodie. [Bobby Seale, Bound and Gagged], Library of Congress
 ---
 Aaron Sorkin’s film The Trial of the Chicago Seven, recently released to Netflix, dramatizes the 1969 trial of eight activists who either planned or participated in the anti-Vietnam protests at the 1968 Democratic National Convention. It is a fun and politically incoherent film, where the actual transcript of the trial is mostly replaced by Sorkin’s dialogue. Out of the eight, Sorkin’s favored protagonist is Tom Hayden (Eddie Redmayne), the SDS leader who over the course of the film clashes with  Abbie Hoffman’s (Sacha Baron Cohen) understanding that their current case is a political trial. In the climax of the film, Hayden interrupts the judge to read a list of American soldiers who had died in Vietnam, an event created by Sorkin to demonstrate Hayden’s newfound appreciation of Hoffman’s view that the political stakes of their trial necessitated political theater and protest.
 
