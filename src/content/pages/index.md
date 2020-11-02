@@ -1,11 +1,15 @@
 ---
 template: index-page
 slug: /
-title: Wyatt Morriss
-tagline: Graphic Designer
-featuredImage: /assets/toa-heftiba-0rlfirsdvzu-unsplash.jpg
+title: Elliot Frank
+tagline: None
+featuredImage: /assets/face.jpg
 cta:
   ctaText: Know more
   ctaLink: /about
 ---
-He is a award winning gaming graphic designer, based in sunny side of California. Working as Principal designer at Bethesda
+Elliot Frank is a freelance web developer and writer based in Chicago.
+
+As a web developer he loves building web applications that make complex data accessible to the general public. He generally works with React for frontends, Django for backends, and PostgreSQL for databases. He has experience with volunteering in the civic tech space; if you're a Leftist organization that needs web developement or data analysis, feel free to drop him a line.
+
+As a writer he writes primarily book and movie reviews. He writes about race, power, capitalism, movies, and novels in the US in the 20th and 21st centuries.
