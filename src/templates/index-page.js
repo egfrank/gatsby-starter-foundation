@@ -33,12 +33,13 @@ export const pageQuery = graphql`
   }
 `
 
-const HomePage = ({ data }) => {
+const HomePage = ({ location, data }) => {
+
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   const Image = frontmatter.featuredImage ? frontmatter.featuredImage.childImageSharp.fluid : ""
 	return (
-		<Layout>
+		<Layout location={location}>
       <SEO/>
       <div className="home-banner grids col-1 sm-2">
         <div>

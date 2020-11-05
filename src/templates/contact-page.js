@@ -23,12 +23,12 @@ export const pageQuery = graphql`
   }
 `
 
-const Contact = ({data}) => {
+const Contact = ({location ,data}) => {
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
 
   return  (
-    <Layout className="contact-page">
+    <Layout className="contact-page" location={location}>
       <SEO 
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}

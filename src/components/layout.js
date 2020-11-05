@@ -18,7 +18,7 @@ query LayoutQuery {
 }
 `
 
-const Layout = ({children, className}) => {
+const Layout = ({children, className, location}) => {
 
   const { site } = useStaticQuery(query)
   const { siteTitle } = site.siteMetadata
@@ -27,7 +27,7 @@ const Layout = ({children, className}) => {
     <div className="primary-container">
       <Header>
         <Logo title={siteTitle} />
-        <Navigation/>
+        <Navigation location={location}/>
       </Header>
       <main className={"container " + className}>
         {children}

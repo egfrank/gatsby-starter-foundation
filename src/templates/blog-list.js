@@ -69,7 +69,7 @@ const Pagination = (props) => (
 class BlogIndex extends React.Component {
   render() {
     
-    const { data } = this.props
+    const { data, location } = this.props
     const { currentPage, numPages } = this.props.pageContext
     const blogSlug = '/blog/' 
     const isFirst = currentPage === 1
@@ -93,7 +93,7 @@ class BlogIndex extends React.Component {
     }
     
     return (
-      <Layout className="blog-page">
+      <Layout className="blog-page" location={location}>
         <SEO
           title={"Blog — Page " + currentPage + " of " + numPages}
           description={"Stackrole base blog page " + currentPage + " of " + numPages }

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { RiArrowUpSLine } from 'react-icons/ri';
 
 const MenuItems = [
   {
@@ -32,14 +32,21 @@ class Navigation extends React.Component {
   }
 
   render () {
-    const listMenuItems = MenuItems.map((menuItem, index) => 
-      <ListLink key={index} to={menuItem.path}>{menuItem.title}</ListLink>
+    const listMenuItems = MenuItems.map((menuItem, index) => {
+      if (this.props.location.pathname == menuItem.path) {
+        return <li><a key={index} onClick={this.handleToggleClick}>{menuItem.title}</a></li>
+      }
+      return <ListLink key={index} to={menuItem.path}>{menuItem.title}</ListLink>
+    }
     )
     return (
       <nav className="site-navigation">
+
         <button onClick={this.handleToggleClick} className={"menu-trigger" + (this.state.showMenu ? " is-active" : "")}>
-          <div className="icon-menu-line"><RiMenu3Line/></div>
-          <div className="icon-menu-close"><RiCloseLine/></div>
+          
+          <div className="icon-menu-line"><div className="menu-text">Menu</div></div>
+          <div className="icon-menu-close"><RiArrowUpSLine/></div>
+         
         </button>
         <ul>
           {listMenuItems}
