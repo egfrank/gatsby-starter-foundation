@@ -33,8 +33,8 @@ class Navigation extends React.Component {
 
   render () {
     const listMenuItems = MenuItems.map((menuItem, index) => {
-      if (this.props.location.pathname == menuItem.path) {
-        return <li><a key={index} onClick={this.handleToggleClick}>{menuItem.title}</a></li>
+      if (this.props.location.pathname === menuItem.path) {
+        return <li><a href="#" key={index} onClick={this.handleToggleClick}>{menuItem.title}</a></li>
       }
       return <ListLink key={index} to={menuItem.path}>{menuItem.title}</ListLink>
     }

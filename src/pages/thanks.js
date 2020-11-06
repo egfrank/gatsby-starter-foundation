@@ -5,8 +5,8 @@ import {RiArrowLeftSLine, RiCheckboxCircleLine} from "react-icons/ri"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 
-const Thanks = () => (
-  <Layout className="thanks-page">
+const Thanks = ({location}) => (
+  <Layout className="thanks-page" location={location}>
     <SEO title="Thank you"/>
     <div className="wrapper" style={{
       textAlign: "center"
