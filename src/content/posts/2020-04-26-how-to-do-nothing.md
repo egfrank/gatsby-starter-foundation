@@ -5,8 +5,8 @@ slug: /how-to-do-nothing
 date: 2020-04-26 13:34
 description: How To Do Nothing
 subhead: "Jenny Odell's treatise against the attention economy is more relevant than ever."
-featuredImage: 
-caption: 
+featuredImage: /assets/how-to-do-nothing.jpg
+caption: The Berkeley Rose Garden
 ---
 
 (Author's note: this article was original published in the zine [Indoorsy Mag #2](https://drive.google.com/file/d/1eqzkOUxcAtP1puubVgUjwxxnE6TDNrAX/view))
