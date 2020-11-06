@@ -29,7 +29,7 @@ const Pagination = (props) => (
   </div>
 )
 
-const Post = ({ data, pageContext }) => {
+const Post = ({ location, data, pageContext }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
   const Image = frontmatter.featuredImage ? frontmatter.featuredImage.childImageSharp.fluid : ""
@@ -41,7 +41,7 @@ const Post = ({ data, pageContext }) => {
   }
 
   return (
-    <Layout className="page">
+    <Layout className="page" location={location}>
       <SEO
         title={frontmatter.title}
         description={frontmatter.description ? frontmatter.description : excerpt}
