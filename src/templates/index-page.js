@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
+import ClipListHome from "../components/clip-list-home"
 import BlogListHome from "../components/blog-list-home"
 import SEO from "../components/seo"
 
@@ -55,6 +56,7 @@ const HomePage = ({ location, data }) => {
         </div>
         <div className="description" dangerouslySetInnerHTML={{__html: html}}/>
       </div>
+      <ClipListHome/>
       <BlogListHome/>
 		</Layout>
 	)

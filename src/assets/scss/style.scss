@@ -50,6 +50,14 @@
     }
   
   }
+  button {
+    color: var(--gray);
+    text-decoration: none;
+    &:hover {
+      color: var(--white);
+    }
+  
+  }
   .menu-trigger {
     display: none;
     font-size: 24px;
@@ -107,6 +115,9 @@
     }
     a {
       display: block;
+      padding: 20px;
+    }
+    button {
       padding: 20px;
     }
   }
@@ -292,6 +303,16 @@ article img {
 }
 
 .blog-post { 
+}
+
+.clip-title {
+  margin-right: 4px;
+  color: black;
+}
+
+.clip-publisher {
+  font-size: 0.9em;
+  color: gray;
 }
 
 .image-container {
@@ -498,6 +519,14 @@ article img {
 		}
 	}
 }
+
+.button-link-lookalike {
+  background-color: inherit;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
 
 @import "utility";
 

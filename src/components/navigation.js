@@ -34,7 +34,7 @@ class Navigation extends React.Component {
   render () {
     const listMenuItems = MenuItems.map((menuItem, index) => {
       if (this.props.location.pathname === menuItem.path) {
-        return <li><a href="#" key={index} onClick={this.handleToggleClick}>{menuItem.title}</a></li>
+        return <li><button className="button-link-lookalike" key={index} onClick={this.handleToggleClick}>{menuItem.title}</button></li>
       }
       return <ListLink key={index} to={menuItem.path}>{menuItem.title}</ListLink>
     }
