@@ -1,6 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-import Img from "gatsby-image"
 
 const ClipEntry = ({ data }) => (
   <div class="clip-entry">
